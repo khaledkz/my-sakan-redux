@@ -1,5 +1,5 @@
 footer{
-    background: rgb(172, 166, 164);
+    background: rgb(88, 44, 29);
      color:white;
     position: fixed;
     left: 0;
@@ -8,7 +8,7 @@ footer{
 }
 
 .footer{
-    background: rgb(146, 152, 163);
+    background: rgb(88, 44, 29);
 
     min-width: 100%;
      margin: 0;
