@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.briefDiscription{
+    padding: 25px;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid 1px rgb(105, 161, 184);
+    margin-top: 3px;
+    border-radius:8px
+ }
+ 
+ .briefDiscriptiona{
+    margin-top:5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .briefDiscription >*{
+    margin-top:10px;
+ }
+
+ .briefDiscriptiona button{
+     background: rgb(105, 161, 184);
+     color:white;
+     padding: 7px;
+     font-size: 1.2em;
+     cursor: pointer;
+ }
+ .briefDiscriptiona button:hover{
+    background: rgb(61, 123, 148);
+ }
+ .briefDiscriptiona h1{
+ color:rgb(105, 161, 184);
+
+}

@@ -1,0 +1,23 @@
+.authentication-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+    border: solid 1px rgb(158, 107, 107);
+    width:95%;
+    margin-left: 2.5%;
+    padding: 20px;
+}
+
+
+@media (min-width: 680px) { 
+    .authentication-page{
+
+    margin-top:140px;
+    border: solid 1px rgb(158, 107, 107);
+    width:80%;
+    margin-left: 10%;
+    padding:40px
+    }
+}

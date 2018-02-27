@@ -1,0 +1,21 @@
+ 
+<table class="table bg-info table-bordered">
+  <thead class="table bg-danger">
+    <tr>
+      <th>#</th>
+      <th>Country name</th>
+      <th>Country Symbol</th>
+      <th>Edit</th>
+     </tr>
+  </thead>
+  <tbody>
+     {{#each countries}}
+    <tr>
+      <th scope="row">{{this.order}}</th>
+      <td>{{this.countryName}}</td>
+      <td>{{this.countrySymbol}}</td>
+      <td><a href="edit/{{this._id}}"><button class="btn btn-danger">View</button></a></td>
+     </tr> 
+     {{/each}}
+  </tbody>
+</table>

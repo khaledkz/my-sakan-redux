@@ -1,0 +1,7 @@
+.privateConta-row{
+    padding: 10px;
+
+}
+.privateConta-row>*{
+   margin:10px;
+}

@@ -1,0 +1,10 @@
+    <h2 class="text-center text-danger">Search Options</h2>
+    <h2 class="text-center text-success">Choose Country:</h2>
+
+<div class="edit-search-options">
+    <ul>
+        {{#each countries}}
+    <a href="country/{{this._id}}"><li>{{this.countryName}}</li></a>
+{{/each}}
+    </ul>
+</div>

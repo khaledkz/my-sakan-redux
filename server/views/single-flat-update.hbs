@@ -1,0 +1,188 @@
+<form method="post">
+    <div class="form-group has-success">
+
+        <label for="example-text-input text-success" class="col-12 col-form-label ">
+            <h3 class="text-danger ml-4">Update Single FLAT</h3>
+        </label>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Country:</h4>
+        </label>
+
+
+         <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+
+            <select data-placeholder="Country..." value="{{countrySelected._id}}" name="country" class="col-lg-6 col-md-8 col-sm-9 col-xs-9  p-2">
+
+                <option selected value="{{countrySelected._id}}"> -- {{countrySelected.countryName}} selected -- </option>
+                {{#each countries}}
+                <option value="{{this._id}}">{{this.countryName}}</option>
+                {{/each}}
+
+            </select>
+
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label mt-2">
+            <h4 class="text-primary pl-2">Rent Or Sale:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+
+            <select data-placeholder="Country..." name="rentOrSale" value="{{flat.rentOrSale}}" class="col-lg-6 col-md-8 col-sm-9 col-xs-9  p-2">
+
+                <option selected value="{{flat.rentOrSale}}"> -- {{flat.rentOrSale}} selected -- </option>
+                <option value="rent">Rent</option>
+                <option value="sale">Sale</option>
+
+            </select>
+
+        </div>
+
+        <label for="example-text-input text-success " class="col-lg-2 col-form-label mt-2">
+            <h4 class="text-primary pl-2">Order:</h4>
+        </label>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3">
+            <input class="form-control" type="number" name="order" id="example-text-input" value="{{flat.description.order}}">
+        </div>
+
+
+
+        <label for="example-text-input text-success " class="col-12 col-form-label mt-1">
+            <h3 class="text-danger pl-2 ml-4">Description:</h3>
+        </label>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2 text-success">-Address-</h4>
+        </label>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">City:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="city" id="example-text-input" value="{{flat.description.address.city}}">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Street:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="street" id="example-text-input" value="{{flat.description.address.street}}">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Flat Number:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="flatNumber" id="example-text-input" value="{{flat.description.address.flatNumber}}">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Post Code:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="postCode" id="example-text-input" value="{{flat.description.address.postCode}}">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Post Title:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="title" id="example-text-input" value="{{flat.description.title}}">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2 text-success">-Letting information-</h4>
+        </label>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Price:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="price" id="example-text-input" value="{{flat.description.lettingInformation.price}}">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Date Avilable:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="dataAvailable" id="example-text-input" value="{{flat.description.lettingInformation.dataAvailable}}">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Furnishing:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+
+            <select data-placeholder="Country..." name="furnishing" value="{{flat.description.lettingInformation.furnishing}}" class="col-lg-6 col-md-8 col-sm-9 col-xs-9  p-2">
+
+                <option  selected value="{{flat.description.lettingInformation.furnishing}}"> -- {{flat.description.lettingInformation.furnishing}} selected -- </option>
+                <option value="furnished">furnished</option>
+                <option value="unfurnished">unfurnished</option>
+            </select>
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Letting Type:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+
+            <select data-placeholder="Country..." name="lettingType" value="{{flat.description.lettingInformation.lettingType}}" class="col-lg-6 col-md-8 col-sm-9 col-xs-9  p-2">
+
+                <option  selected value="{{flat.description.lettingInformation.lettingType}}"> -- {{flat.description.lettingInformation.lettingType}} selected -- </option>
+                <option  value="Long">Long Term</option>
+                <option  value="Short">Short Term</option>
+            </select>
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Reduced here:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="reducedOnWebsite" value="{{flat.description.lettingInformation.reducedOnWebsite}}" id="example-text-input">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Debosit:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="form-control" type="text" name="deposit" value="{{flat.description.lettingInformation.deposit}}" id="example-text-input">
+        </div>
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Brief Description:</h4>
+        </label>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <textarea rows="4" class="form-control form-control-success mb-4" id="inputSuccess1" name="briefDescription">{{flat.briefDescription}}</textarea>
+        </div>
+
+
+        <label for="example-text-input text-success " class="col-12 col-form-label">
+            <h4 class="text-primary pl-2">Full Description:</h4>
+        </label>
+
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <textarea rows="20" class="form-control form-control-success mb-4" id="inputSuccess1" name="fullDescription">{{flat.description.fullDescription}}</textarea>
+        </div>
+
+        <div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 ">
+            <input class="btn btn-success btn-lg" type="submit" value="Submit" >
+        </div>
+
+    </div>
+
+</form>

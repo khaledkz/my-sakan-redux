@@ -1,0 +1,93 @@
+.searchSection{
+    margin-top:20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+ }
+.searchSection h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.searchSection>*{
+    margin-top:6px;
+
+}
+.searchSection-buttons{
+ width:75%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+.searchSection select{
+    width: 100%;
+}
+.searchSection-buttons >*{
+    padding: 7px;
+    background: rgb(201, 176, 139);
+    color:black;
+    cursor: pointer;
+    margin-top:10px;
+    border-radius:  8px;  
+}
+.searchSection-buttons >*:hover{
+    background: rgb(163, 143, 112);
+    color:white;
+}
+.newSearchBtn{
+    width:80%;
+    background: rgb(201, 176, 139);
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius:6px;
+}
+.newSearchBtn:hover{
+    background: rgb(163, 143, 112);
+    color:white
+
+}
+@media (min-width:680px){
+    .newSearchBtn{
+        width:30%;
+         font-size: 1.3em;
+    }
+    .searchSection-buttons{
+        width:35%;
+    }
+   
+    .searchSection{
+        padding: 30px;
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        border: solid 1px rgb(212, 204, 204);
+        border-radius: 10px;
+    }
+}
+@media (min-width:980px){
+    .searchSection-buttons{
+        width:47%;
+
+    }
+    .searchSection .searchSection-buttons >*{
+        font-size: 1em;
+   }
+   .searchSection>*{
+        font-size: 1.4em
+    }
+
+    .searchSectionOuter{
+        width:100%;
+         display: flex
+    }
+    .searchSection{
+        padding: 50px;
+        width:50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        border: solid 1px rgb(212, 204, 204);
+        border-radius: 10px;
+    }
+}

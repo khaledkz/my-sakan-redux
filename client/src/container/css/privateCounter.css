@@ -1,0 +1,20 @@
+.privateConta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.privateConta-row{
+     padding: 10px;
+ 
+}
+.privateConta-row>*{
+    margin:10px;
+}
+
+.privateConta>*{
+    padding:5px;
+}

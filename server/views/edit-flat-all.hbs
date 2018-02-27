@@ -1,0 +1,25 @@
+ 
+<table class="table bg-info table-bordered">
+  <thead class="table bg-danger">
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>City</th>
+      <th>price</th>
+      <th>Rent/Sale</th>
+      <th>View</th>
+     </tr>
+  </thead>
+  <tbody>
+     {{#each flats}}
+    <tr>
+              <th scope="row">{{this.description.order}}</th>
+              <td>{{this.description.title}}</td>
+              <td>{{this.description.address.city}}</td>
+              <td>{{this.description.lettingInformation.price}}</td>
+              <td>{{this.rentOrSale}}</td>
+              <td><a href="all/{{this._id}}"><button class="btn btn-danger">View</button></a></td>
+      </tr> 
+     {{/each}}
+  </tbody>
+</table>
