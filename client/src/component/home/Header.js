@@ -6,7 +6,7 @@ const Header = () => (
     <header>
         <div className="header-first-part">
             <img alt="sakan" width="50" src="https://hostelhunting.com/img/explore/howitworks/look.png" />
-            <h3>My-Sakan</h3>
+            <h3>My-Sakan with Redux</h3>
         </div>
 
         <div className="header-second-part">
